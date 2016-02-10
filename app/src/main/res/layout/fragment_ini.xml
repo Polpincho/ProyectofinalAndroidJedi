@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IniFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="80dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameini"
+            android:hint="Username"
+            android:layout_alignParentTop="true" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_alignBottom="@+id/password"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Log in"
+                android:id="@+id/log"
+                android:layout_below="@+id/password"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:text="Sign up"
+                android:id="@+id/sign"
+                android:layout_below="@+id/password"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

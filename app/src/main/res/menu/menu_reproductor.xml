@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:title="Memory"
+    tools:context="com.example.polpincho.proyectofinal.Reproductor">
+
+    <item android:id="@+id/MediaLogOut"
+        android:title="Log Out"
+        android:icon="@drawable/ic_exit_to_app_white_48dp"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

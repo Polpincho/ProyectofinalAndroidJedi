@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.polpincho.proyectofinal.Perfil">
+
+    <item android:id="@+id/PerfilEditExit"
+        android:title="Log Out"
+        android:icon="@drawable/ic_exit_to_app_white_48dp"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>

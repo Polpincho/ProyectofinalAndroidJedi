@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_weight="0.8" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:text="try again"
+            android:id="@+id/nextButton"
+            android:textSize="30dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

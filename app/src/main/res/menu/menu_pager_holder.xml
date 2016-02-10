@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:title="Memory"
+    tools:context="com.example.polpincho.proyectofinal.PagerHolder">
+
+    <item android:id="@+id/HolderRestart"
+        android:title="Reset"
+        android:icon="@drawable/ic_replay_white_48dp"
+        app:showAsAction="ifRoom">
+    </item>
+    <item android:id="@+id/HolderLogOut"
+        android:title="Log Out"
+        android:icon="@drawable/ic_exit_to_app_white_48dp"
+        app:showAsAction="ifRoom">
+    </item>
+
+</menu>
