@@ -10,6 +10,7 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -121,6 +122,10 @@ public class Memory extends Fragment implements View.OnClickListener {
         for (int i =0; i<16; ++i){
             button[i].setOnClickListener(this);
         }
+
+
+        Snackbar.make(rootView, "Al terminar la partida, toca para continuar", Snackbar.LENGTH_LONG)
+                .show();
 
         initialize();
         return rootView;
@@ -360,7 +365,7 @@ public class Memory extends Fragment implements View.OnClickListener {
                 while (!second);
             }
             try {
-                Thread.sleep(500);
+                Thread.sleep(2000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
