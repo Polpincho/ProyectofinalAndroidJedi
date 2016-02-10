@@ -20,15 +20,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.polpincho.proyectofinal.persistencia.BDUser;
 
 public class InMenu extends AppCompatActivity implements View.OnClickListener {
 
-    private Button clc;
-    private Button mpl;
-    private Button pro;
-    private Button rnk;
+    private ImageButton clc;
+    private ImageButton mpl;
+    private ImageButton pro;
+    private ImageButton rnk;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,10 +40,10 @@ public class InMenu extends AppCompatActivity implements View.OnClickListener {
         setSupportActionBar(toolbar);
         setTitle("Main menu");
         //Creamos el primer fragment, y no le pasamos argumentos!
-        clc = (Button) findViewById(R.id.clc);
-        rnk = (Button) findViewById(R.id.rnk);
-        mpl = (Button) findViewById(R.id.med);
-        pro = (Button) findViewById(R.id.prof);
+        clc = (ImageButton) findViewById(R.id.clc);
+        rnk = (ImageButton) findViewById(R.id.rnk);
+        mpl = (ImageButton) findViewById(R.id.med);
+        pro = (ImageButton) findViewById(R.id.prof);
 
         clc.setOnClickListener(this);
         rnk.setOnClickListener(this);

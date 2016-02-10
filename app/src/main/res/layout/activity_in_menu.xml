@@ -16,39 +16,55 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:layout_margin="100dp"
-        android:layout_marginTop="150dp">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="calculator"
-            android:id="@+id/clc"
-            android:layout_weight="1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Play"
-            android:id="@+id/rnk"
-            android:layout_weight="1" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Play"
+                android:id="@+id/rnk"
+                android:layout_weight="1"
+                android:src="@drawable/ic_games_white_36dp" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="profile"
-            android:id="@+id/prof"
-            android:layout_weight="1" />
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="calculator"
+                android:id="@+id/clc"
+                android:src="@drawable/calc" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Media player"
-            android:id="@+id/med"
-            android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Media player"
+                android:id="@+id/med"
+                android:layout_weight="1"
+                android:src="@drawable/ic_headset_white_36dp" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="profile"
+                android:id="@+id/prof"
+                android:layout_weight="1"
+                android:src="@drawable/ic_settings_applications_white_36dp" />
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

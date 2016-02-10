@@ -1,12 +1,17 @@
 package com.example.polpincho.proyectofinal;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.Environment;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.TaskStackBuilder;
 
 import java.io.File;
 import java.io.IOException;
@@ -124,9 +129,6 @@ public class MediaPlayerServ extends Service {
         if (Music.exists()) directory = true;
         songlist = Music.list();
         assigna();
-
-
-
     }
 
    private void assigna(){

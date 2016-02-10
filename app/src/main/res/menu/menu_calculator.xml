@@ -21,21 +21,24 @@
         app:showAsAction="always"
         android:icon="@drawable/ic_sms_failed_white_48dp"
         android:checkableBehavior="single">
-        <item android:id="@+id/submenu1"
-            android:title="Toast" />
-        <item android:id="@+id/submenu2"
-            android:title="SnackBar" />
-        <item android:id="@+id/submenu3"
-            android:title="De Estado">
-            <menu>
-                <group android:checkableBehavior="all">
-                    <item android:id="@+id/subsubmenu1"
-                        android:title="No Sticky" />
-                    <item android:id="@+id/subsubmenu2"
-                        android:title="Sticky" />
-                </group>
-            </menu>
-        </item>
+        <menu>
+            <item android:id="@+id/submenu1"
+                android:title="Toast" />
+            <item android:id="@+id/submenu2"
+                android:title="SnackBar" />
+            <item android:id="@+id/submenu3"
+                android:title="De Estado">
+                <menu>
+                    <group android:checkableBehavior="all">
+                        <item android:id="@+id/subsubmenu1"
+                            android:title="No Sticky" />
+                        <item android:id="@+id/subsubmenu2"
+                            android:title="Sticky" />
+                    </group>
+                </menu>
+            </item>
+        </menu>
+
     </item>
 
     <item android:id="@+id/CalcLogOut"
